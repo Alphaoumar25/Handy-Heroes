@@ -1,0 +1,22 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.temp
+
+# Fichiers de sauvegarde
+*.bak
+*~
+
+# Fichiers de dépendances (si vous en ajoutez plus tard)
+# node_modules/
+# package-lock.json 

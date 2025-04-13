@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handy Heroes - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="Logo.jpeg" alt="Handy Heroes Logo" class="logo-image">
+                <div class="logo">Handy Heroes</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes là pour répondre à toutes vos questions</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <h2>Informations de contact</h2>
+                <div class="info-card">
+                    <h3>Adresse</h3>
+                    <p>200 av. de la Cathédrale</p>
+                    <p>Winnipeg, MB R2H 0H7</p>
+                </div>
+                <div class="info-card">
+                    <h3>Téléphone</h3>
+                    <p>+1 (438) 861-3283</p>
+                    <p>Du lundi au samedi</p>
+                    <p>9h00 - 19h00</p>
+                </div>
+                <div class="info-card">
+                    <h3>Email</h3>
+                    <p>contact@handyheroes.com</p>
+                    <p>support@handyheroes.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Décrivez votre problème</h2>
+                <p class="form-intro">Partagez les détails de votre problème et nous vous aiderons à trouver la solution idéale.</p>
+                
+                <form id="contactForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Type de service</label>
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="reparation">Réparation</option>
+                            <option value="bricolage">Bricolage</option>
+                            <option value="jardinage">Jardinage</option>
+                            <option value="menage">Ménage</option>
+                            <option value="demenagement">Déménagement</option>
+                            <option value="deneigement">Déneigement</option>
+                            <option value="achat_materiel">Achat de matériel</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgence">Niveau d'urgence</label>
+                        <select id="urgence" name="urgence" required>
+                            <option value="normal">Normal</option>
+                            <option value="urgent">Urgent (24-48h)</option>
+                            <option value="tres_urgent">Très urgent (< 24h)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description du problème</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Décrivez ce que vous souhaitez faire réparer ou modifier..." required></textarea>
+                    </div>
+
+                    <div class="form-group upload-group">
+                        <label for="files">Photos ou Vidéos du problème</label>
+                        <div class="upload-zone" id="uploadZone">
+                            <input type="file" id="files" name="files" multiple accept="image/*,video/*" class="file-input">
+                            <div class="upload-placeholder">
+                                <i class="upload-icon">📸</i>
+                                <p>Glissez vos fichiers ici ou cliquez pour sélectionner</p>
+                                <span class="upload-info">Formats acceptés : JPG, PNG, MP4, MOV (Max: 50MB)</span>
+                            </div>
+                        </div>
+                        <div id="filePreview" class="file-preview"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget approximatif (optionnel)</label>
+                        <input type="number" id="budget" name="budget" placeholder="Votre budget en $">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="disponibilite">Disponibilité préférée</label>
+                        <input type="datetime-local" id="disponibilite" name="disponibilite" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Notre zone d'intervention</h2>
+            <div id="map-container" class="map-container">
+                <div id="geolocation-status"></div>
+                <iframe id="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82157.39787775711!2d-97.19878346542663!3d49.8997541570062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73fbf91a2b11%3A0x2b2a1afac6b9ca64!2sWinnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1709168433099!5m2!1sen!2sca"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Handy Heroes</h4>
+                <p>Votre partenaire de confiance</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@handyheroes.com</p>
+                <p>Tél: +1 (438) 861-3283</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Handy Heroes. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
