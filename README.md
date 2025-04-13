@@ -32,8 +32,8 @@ Handy Heroes est une application web qui permet aux utilisateurs de :
 
 ## Déploiement
 
-Ce site est hébergé sur GitHub Pages et accessible à l'adresse : [https://votre-nom-utilisateur.github.io/Handy-Heroes](https://votre-nom-utilisateur.github.io/Handy-Heroes)
+Ce site est hébergé sur GitHub Pages et accessible à l'adresse : [https://votre-nom-utilisateur.github.io/Handy-Heroes](https://Alphaoumar25.github.io/Handy-Heroes)
 
 ## Auteur
 
-Handy Heroes Team 
+Alpha Keita
