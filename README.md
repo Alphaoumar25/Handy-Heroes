@@ -36,4 +36,4 @@ Ce site est hébergé sur GitHub Pages et accessible à l'adresse : [https://Alp
 
 ## Auteur
 
-Alpha Keita
+Alpha Oumar Keita
