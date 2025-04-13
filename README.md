@@ -1,5 +1,3 @@
-# Handy-Heroes
-This repository contains the main files of the website of Handy Heroes. Our entrepreneurship class project.
 # Handy Heroes - Site Web
 
 Site web pour Handy Heroes, une plateforme qui connecte les utilisateurs ayant besoin de réparations à domicile avec des professionnels qualifiés.
@@ -34,7 +32,7 @@ Handy Heroes est une application web qui permet aux utilisateurs de :
 
 ## Déploiement
 
-Ce site est hébergé sur GitHub Pages et accessible à l'adresse : [https://votre-nom-utilisateur.github.io/handy-heroes](https://votre-nom-utilisateur.github.io/handy-heroes)
+Ce site est hébergé sur GitHub Pages et accessible à l'adresse : [https://votre-nom-utilisateur.github.io/Handy-Heroes](https://votre-nom-utilisateur.github.io/Handy-Heroes)
 
 ## Auteur
 
