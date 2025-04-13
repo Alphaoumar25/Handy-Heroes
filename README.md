@@ -1,3 +1,5 @@
+# Handy-Heroes
+This repository contains the main files of the website of Handy Heroes. Our entrepreneurship class project.
 # Handy Heroes - Site Web
 
 Site web pour Handy Heroes, une plateforme qui connecte les utilisateurs ayant besoin de réparations à domicile avec des professionnels qualifiés.
